@@ -1,0 +1,42 @@
+.food-display {
+  margin-top: 30px;
+}
+
+.food-display-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-display-topbar h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food-display-search input {
+  padding: 10px;
+  font-size: large;
+  border: none;
+  color: tomato;
+  opacity: 0.7;
+}
+
+.food-display-search input:focus {
+  outline: none;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+
+@media (max-width: 768px){
+    .food-display-topbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
